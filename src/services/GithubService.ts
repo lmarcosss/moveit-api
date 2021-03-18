@@ -15,7 +15,7 @@ class GithubService {
         username,
     }: Request): Promise<User> {
         try {
-            const { data } = await axios.get(`https://api.github.com/users/${username}`);
+            const { data } = await axios.get(`${process.env.GITHUB}/users/${username}`);
 
             return data;
         } catch (error) {
