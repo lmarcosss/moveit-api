@@ -10,6 +10,8 @@ export default {
     },
     synchronize: true,
     extra: {
-        ssl: true,
+        ssl: {
+            rejectUnauthorized: false,
+        },
     }
 } as ConnectionOptions
