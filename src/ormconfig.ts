@@ -6,4 +6,6 @@ export default {
     "cli": {
         "migrationsDir": "./src/database/migrations"
     },
+    synchronize: true,
+    logging: true,
 }
