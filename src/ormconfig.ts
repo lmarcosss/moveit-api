@@ -1,9 +1,12 @@
-module.exports = {
+export default {
     "type": "postgres",
     "url": process.env.DATABASE_URL,
-    "entities": ["./dist/models/*.js"],
-    "migrations": ["./dist/database/migrations/*.js"],
+    "entities": [process.env.ENTITIES],
+    "migrations": [process.env.MIGRATIONS],
     "cli": {
         "migrationsDir": "./src/database/migrations"
-    }
+    },
+    extra: {
+        ssl: true
+   }
 }
