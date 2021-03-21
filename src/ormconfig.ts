@@ -1,3 +1,5 @@
+import { ConnectionOptions } from "typeorm";
+
 export default {
     "type": "postgres",
     "url": process.env.DATABASE_URL,
@@ -6,4 +8,8 @@ export default {
     "cli": {
         "migrationsDir": "./src/database/migrations"
     },
-}
+    synchronize: true,
+    extra: {
+        ssl: true,
+    }
+} as ConnectionOptions
