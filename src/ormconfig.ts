@@ -6,7 +6,4 @@ export default {
     "cli": {
         "migrationsDir": "./src/database/migrations"
     },
-    extra: {
-        ssl: true
-   }
 }
