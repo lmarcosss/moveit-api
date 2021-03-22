@@ -9,6 +9,7 @@ export default {
         "migrationsDir": "./src/database/migrations"
     },
     synchronize: false,
+    logging: true,
     extra: {
         ssl: {
             rejectUnauthorized: false,
