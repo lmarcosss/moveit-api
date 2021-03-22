@@ -8,11 +8,11 @@ export default {
     "cli": {
         "migrationsDir": "./src/database/migrations"
     },
-    // synchronize: false,
-    // logging: true,
-    // extra: {
-    //     ssl: {
-    //         rejectUnauthorized: false,
-    //     },
-    // }
+    synchronize: false,
+    logging: true,
+    extra: {
+        ssl: {
+            rejectUnauthorized: false,
+        },
+    }
 } as ConnectionOptions
