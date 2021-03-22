@@ -8,7 +8,7 @@ export default {
     "cli": {
         "migrationsDir": "./src/database/migrations"
     },
-    synchronize: true,
+    synchronize: false,
     extra: {
         ssl: {
             rejectUnauthorized: false,
